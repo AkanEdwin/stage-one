@@ -9,12 +9,12 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import dj_database_url
 
 from pathlib import Path
 
 import os
 
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -87,7 +87,7 @@ DATABASES = {
 }
 
 dj_database_url = os.environ.get("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse(dj_database_url)
+DATABASES["default"] = dj_database_url.parse("postgres://endpoint_db_user:0WtSJSjUNkZkcRMz0U9SrvgVTx46xPel@dpg-cjv4dj7hdsdc73bf0r50-a.oregon-postgres.render.com/endpoint_db")
 
 
 # Password validation
