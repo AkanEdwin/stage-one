@@ -87,7 +87,7 @@ DATABASES = {
 }
 
 dj_database_url = os.environ.get("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse("postgres://endpoint_db_user:0WtSJSjUNkZkcRMz0U9SrvgVTx46xPel@dpg-cjv4dj7hdsdc73bf0r50-a.oregon-postgres.render.com/endpoint_db")
+DATABASES["default"] = dj_database_url.parse(dj_database_url)
 
 
 # Password validation
