@@ -4,7 +4,7 @@ from datetime import datetime
 
 #Current date and time
 
-currentDate = datetime.utcnow().strftime('%)Y-%m-%dT%H:%M:%SZ')
+currentDate = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 currentDay = datetime.now().strftime('%A')
 
 
