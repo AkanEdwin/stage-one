@@ -4,8 +4,8 @@ from datetime import datetime
 
 today = datetime.now()
 # Current day and time
-        currentDay = datetime.now().strftime("%A")
-        utcTime = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+currentDay = datetime.now().strftime("%A")
+utcTime = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 @api_view(['GET'])
